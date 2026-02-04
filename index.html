@@ -1,0 +1,322 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .parent {
+            background-color: #17094c;
+            padding: 75px;
+        }
+ 
+        .first-section {
+            background-color:#E5E4E2;
+            /* background-color:#f8f9fa; */
+            /* background-color:#fff; */
+            border-radius: 30px;
+            padding: 50px;
+        }
+  
+        .content h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+ 
+        .content p {
+            margin-bottom: 50px;
+        }
+ 
+        /* Navigation bar */
+        .header {
+            display: flex;
+        }
+ 
+        .navbar {
+            display: flex;
+            margin-left: auto;
+            width: fit-content;
+            list-style-type: none;
+        }
+ 
+        .navbar li {
+            display: flex;
+            margin: 0px 20px;
+            align-items: center;
+        }
+ 
+        .navbar li:hover {
+            color: #fbca47;
+            text-decoration: underline;
+        }
+ 
+        .discover_button {
+            background-color: #17094c;
+            color: white;
+            padding: 14px 28px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+        }
+ 
+        .banner {
+            display: flex;
+            margin: 40px 0px;
+        }
+
+        /* Arrow section */
+        .slider {
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+            gap: 30px;
+        }
+ 
+        .slider i:hover {
+            color: black;
+            animation-name: colorChange;
+            animation-duration: 2s;
+        }
+ 
+        @keyframes colorChange {
+            from {
+                color:#fbca47;
+            }
+            to {
+                color:green;
+            }
+            
+        }
+ 
+        .circle-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+ 
+            width: 40px;
+            height: 40px;
+ 
+            border-radius: 50%;
+            color: #fbca47;
+            border: 1px solid #fbca47;
+ 
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+ 
+        }
+ 
+        .circle-icon:hover {
+            color: black;
+            border: 1px solid black;
+        }
+ 
+        .second-section {
+            background-color: white;
+        }
+ 
+        .about-us {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            padding: 100px 0px;
+        }
+
+        /* Third Section*/
+        .third-section {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .cards {
+            width: 22%;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            color: white
+        }
+
+        /* .service-img {
+            filter: brightness(0) invert(1); 
+            transition: 0.3s ease;
+        }
+  
+        .service-img:hover {
+            filter: none; 
+        }
+
+        .service-text {
+            color: white;
+        }
+
+        .service-text:hover {
+            color: #fbca47;
+        }
+
+        .service-box {
+            transition: 0.3s ease;
+        }
+   */
+
+   /* Parent */
+        .service-box {
+            transition: 0.3s ease;
+        }
+
+        /* Default */
+        .service-img {
+            filter: brightness(0) invert(1); /* White */
+            transition: 0.3s ease;
+        }
+
+        .service-text {
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .service_button {
+            border: 1px solid white;
+            color: white;
+            background: transparent;
+            transition: 0.3s ease;
+            padding: 14px 28px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+
+        /* When parent is hovered */
+        .service-box:hover .service-img {
+            filter: none; /* Yellow */
+        }
+
+        .service-box:hover .service-text {
+            color: #fbca47;
+        }
+
+        .service-box:hover .service_button {
+            color: #fbca47;
+            border-color: #fbca47;
+        }
+
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="first-section">
+ 
+            <div class="header">
+                <img src="logo.png" alt="logo">
+                <ul class="navbar">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>NEWS</li>
+                    <li>CONTACT US</li>
+                    <li>LOGIN</li>
+                </ul>
+            </div>
+            
+            <div class="banner">
+                <div class="content">
+                    <h2 style="color: #fbca47;font-size: 40px;">Progress & Success</h2>
+                    <h1>C U R R E N C Y</h1>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable
+                        It is a long established fact that a reader will be distracted by the readable
+                    </p>
+                    <button class="discover_button">DISCOVER NOW</button>
+                    <div class="slider">
+                        <i class="fa fa-chevron-left circle-icon"></i>
+                        <i class="fa fa-chevron-right circle-icon"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="ban_img.png" alt="currency">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="second-section">
+        <div class="about-us">
+            <div class="image">
+                <img src="second.png" alt="currency">
+            </div>
+            <div class="content" style="margin:50px">
+                <h5 style="color:#fbca47; font-size:20px;">
+                    ABOUT US
+                </h5>
+                <h2 style="font-size: 40px;font-weight:normal;">
+                    WELCOME TO OUR DEGITALEX
+                </h2>
+                <p style="line-height: 30px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+                <br>
+                <br>
+                <button class="discover_button">READ MORE</button>
+
+            </div>
+        </div>
+            
+    </div>
+    <!-- Third Section-->
+    <div style="background-color: #17094c;padding: 75px;">
+        <div style="width: 1200px;margin: auto;">
+            <div style="line-height: 45px;">
+                <h5 style="color:#fbca47; font-size:20px;">
+                    SERVICES
+                </h5>
+                <h2 style="font-size: 40px;font-weight:normal;color:white;">
+                    CONSECTETUR ADIPISCING ELIT
+                </h2>
+                <br>
+            </div>
+        </div>
+        <div class="third-section">
+            <div class="cards">
+                <div class="service-box">
+                    <img src="services_icon1h.png" alt="" class="service-img">
+                    <h1 class="service-text">Safe & Secure</h1><br>
+                    <p>ncididunt ut labore et dolore magna aliqua. Ut enim</p><br>
+                    <button class="service_button">READ MORE</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="service-box">
+                    <img src="services_icon2h.png" alt="" class="service-img">
+                    <h1 class="service-text">Mobile Apps</h1><br>
+                    <p>ncididunt ut labore et dolore magna aliqua. Ut enim</p><br>
+                    <button class="service_button">READ MORE</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="service-box">
+                    <img src="services_icon3h.png" alt="" class="service-img">
+                    <h1 class="service-text">Wallet</h1><br>
+                    <p>ncididunt ut labore et dolore magna aliqua. Ut enim</p><br>
+                    <button class="service_button">READ MORE</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="service-box">
+                    <img src="services_icon4h.png" alt="" class="service-img">
+                    <h1 class="service-text">Experts Support</h1><br>
+                    <p>ncididunt ut labore et dolore magna aliqua. Ut enim</p><br>
+                    <button class="service_button">READ MORE</button>
+                </div>
+            </div>
+    </div>    
+    
+</body>
+</html>
