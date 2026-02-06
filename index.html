@@ -58,7 +58,7 @@
             text-decoration: underline;
         }
  
-        .discover_button {
+        .discover-button {
             background-color: #17094c;
             color: white;
             padding: 14px 28px;
@@ -67,6 +67,10 @@
             border: none;
         }
  
+        .discover-button:hover {
+            background-color: #fbca47;
+        }
+
         .banner {
             display: flex;
             margin: 40px 0px;
@@ -190,10 +194,89 @@
             margin: auto;
             text-align: center;
         }
+        
+        /* Sixth Section */
+        .email-input {
+            width: 700px;
+            margin-bottom: 50px;
+            padding: 20px 20px;
+            border-radius: 30px;
+        }
 
+        .email-input::placeholder {
+            font-size: 17px;
+        }
+
+        .subscribe-button {
+            position: absolute;
+            right: 65px;
+            top: 5px;
+            background-color: #fbca47;
+            color: white;
+            font-size: 16px;
+            width: 200px;
+            border-radius: 30px;
+            height: 50px;
+            border: none;
+        }
+
+        .subscribe-button:hover {
+            background-color: #17094c;
+        }
+
+        /* Seventh Section */
+
+        .dot {
+            width: 30px;
+            height: 30px;
+            background-color: #17094c;
+            margin: 4px;
+            border-radius: 50px;
+        }
+
+        .second-dot {
+            width: 30px;
+            height: 30px;
+            background-color: #fbca47;
+            margin: 4px;
+            border-radius: 50px;
+        }
+
+        /* Eighth Section */
+        .callback-form {
+            width: 900px;
+            margin-bottom: 50px;
+            padding: 20px 20px;
+            border-radius: 30px;
+            border: 1px solid #cecece;
+            font-size: 20px;
+        }
+
+        .callback-form::placeholder {
+            font-size: 18px;        
+            color: #cecece;
+        }
+
+        .message-form {
+            width: 900px;
+            height: 150px;
+            margin-bottom: 50px;
+            padding: 20px 20px;
+            border-radius: 30px;
+            border: 1px solid #cecece;
+            font-size: 20px;
+        }
+        
+        .message-form::placeholder {
+            font-size: 18px;        
+            color: #cecece;
+        }
+
+        
 </style>
 </head>
 <body>
+    <!-- First Section -->
     <div class="parent">
         <div class="first-section">
  
@@ -217,7 +300,7 @@
                         It is a long established fact that a reader will be distracted by the readable
                         It is a long established fact that a reader will be distracted by the readable
                     </p>
-                    <button class="discover_button">DISCOVER NOW</button>
+                    <button class="discover-button">DISCOVER NOW</button>
                     <div class="slider">
                         <i class="fa fa-chevron-left circle-icon"></i>
                         <i class="fa fa-chevron-right circle-icon"></i>
@@ -230,6 +313,7 @@
             
         </div>
     </div>
+    <!-- Second Section -->
     <div class="second-section">
         <div class="about-us">
             <div class="image">
@@ -240,14 +324,14 @@
                     ABOUT US
                 </h5>
                 <h2 style="font-size: 40px;font-weight:normal;">
-                    WELCOME TO OUR DEGITALEX
+                    WELCOME TO OUR DIGITALEX
                 </h2>
                 <p style="line-height: 30px;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 </p>
                 <br>
                 <br>
-                <button class="discover_button">READ MORE</button>
+                <button class="discover-button">READ MORE</button>
 
             </div>
         </div>
@@ -318,7 +402,7 @@
                 <br>
                 <br>
                 <br>
-                <button class="discover_button">START NOW</button>
+                <button class="discover-button">START NOW</button>
             </div>
         </div>
     </div> 
@@ -339,10 +423,85 @@
                 <br>
                 <br>
                 <br>
-                <button class="discover_button">MAKE WALLET</button>
+                <button class="discover-button">MAKE WALLET</button>
             </div>
         </div>
     </div> 
-    
+    <!-- Sixth Section-->
+    <div style="padding: 75px;background-image:url('sub_bg.jpg')">
+        <div style="max-width: 800px;margin: auto;padding: 100px;">
+            <div style="line-height: 30px;">
+                <h1 style="color:#fbca47;text-align: center;color:white;">
+                    SUBSCRIBE TO OUR NEWSLETTER
+                </h1>
+                <br>
+                <p style="color:white;text-align: center;font-size:20px;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                </p>
+                <br>
+                <div style="text-align: center; display:flex; position: relative;">
+                    <input type="text" placeholder="Enter your email" class="email-input">
+                    <button class="subscribe-button">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Seventh Section-->
+    <div style="padding: 75px;">
+        <div style="max-width: 800px;margin: auto;">
+            <div style="line-height: 30px;">
+                <h4 style="color:#fbca47;text-align: center;">
+                    TESTIMONIAL
+                </h4>
+                <br>
+                <h1 style="color:black;text-align: center;font-size:50px;font-weight:normal;">
+                    WHAT OUR CLIENTS SAYS
+                </h1>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <img src="customer_logo.png" alt="">
+                </div>
+                <h3 style="text-align: center;font-weight: normal;border-bottom:3px solid #fbca47;width:150px;margin: auto;">DISTRACTED BY</h3>
+                <br>
+                <p style="text-align: center;">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                </p>
+                <br>  
+                <div style="display: flex;justify-content: center;">
+                    <div class="dot"></div>
+                    <div class="second-dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <!-- Eighth Section-->
+    <div>
+        <div style="width: 1200px;margin: auto;">
+            <div style="line-height: 30px;">
+                <h4 style="color:#fbca47;text-align: center;padding-bottom:10px;">
+                    CONTACT US
+                </h4>
+                <h1 style="color:black;text-align: center;font-size:50px;font-weight:normal;">
+                    REQUEST A CALLBACK
+                </h1>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <input type="text" placeholder="Name" class="callback-form">
+
+                    <input type="text" placeholder="Phone Number" class="callback-form">
+
+                    <input type="text" placeholder="Email Address" class="callback-form">
+
+                    <input type="text" placeholder="Message" class="message-form">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
